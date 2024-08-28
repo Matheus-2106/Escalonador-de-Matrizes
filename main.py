@@ -1,7 +1,15 @@
-matriz = [[2, 1, 1, 1, 1],
-          [1, 2, 1, 1, 2],
-          [1, 1, 2, 1, 3],
-          [1, 1, 1, 2, 4]]
+linhas = int(input("Digite o número de linhas: "))
+
+matriz = []
+
+for linha in range(linhas):
+    fila = []
+    for coluna in range(linhas + 1):
+        fila.append(int(input(f"[{linha + 1}][{coluna + 1}]: ")))
+    matriz.append(fila)
+
+for linha in matriz:
+    print(linha)
 
 i = 0
 
@@ -29,4 +37,3 @@ while i < len(matriz):
 
 for linha in matriz:
     print(linha)
-                                                          
